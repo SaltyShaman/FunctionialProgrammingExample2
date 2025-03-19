@@ -1,4 +1,6 @@
 package org.example;
 
-public interface TwoArgument {
+@FunctionalInterface
+public interface TwoArgument<T, U, R> {
+    R myFunc(T t, U u);
 }
